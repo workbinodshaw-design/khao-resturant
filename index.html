@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khao Gully - The Food Court</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:black;
+      overflow-x:hidden;
+      font-family:Arial, sans-serif;
+    }
+
+    .glow{
+      box-shadow:0 0 40px rgba(255,80,120,.5);
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.03);
+    }
+
+    .img-hover:hover img{
+      transform:scale(1.1);
+    }
+
+    .gradient{
+      background:linear-gradient(to right,#ff0080,#ff7b00,#ffd000);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/40 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-3xl font-black">
+        Khao <span class="text-pink-500">Gully</span>
+      </h1>
+
+      <div class="hidden md:flex gap-8 text-gray-300 font-semibold">
+        <a href="#about" class="hover:text-pink-400">About</a>
+        <a href="#menu" class="hover:text-pink-400">Menu</a>
+        <a href="#gallery" class="hover:text-pink-400">Gallery</a>
+        <a href="#contact" class="hover:text-pink-400">Contact</a>
+      </div>
+
+      <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-6 py-3 rounded-full font-bold glow">
+        Book Table
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section
+    class="min-h-screen flex items-center justify-center text-center px-6 relative"
+    style="
+      background:
+      linear-gradient(to bottom,rgba(0,0,0,.5),rgba(0,0,0,.9)),
+      url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1800&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    "
+  >
+
+    <div class="max-w-5xl">
+
+      <div class="mb-6 inline-block bg-white/10 border border-white/10 px-6 py-2 rounded-full backdrop-blur-xl">
+        ✨ Guwahati’s Viral Food Spot
+      </div>
+
+      <h1 class="text-6xl md:text-8xl font-black leading-none mb-8">
+        EAT.
+        <span class="block gradient">
+          CHILL.
+        </span>
+        REPEAT.
+      </h1>
+
+      <p class="text-xl md:text-2xl text-gray-300 leading-relaxed mb-10">
+        Neon lights, aesthetic interiors, spicy noodles,
+        dreamy vibes and unforgettable food dates 😮‍💨
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-5">
+
+        <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-10 py-5 rounded-full text-lg font-black glow hover:scale-110 transition duration-300">
+          Explore Menu
+        </button>
+
+        <button class="border border-white/20 bg-white/5 px-10 py-5 rounded-full text-lg font-bold hover:bg-white hover:text-black transition duration-300">
+          Visit Us
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- STATS -->
+  <section class="-mt-20 relative z-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6">
+
+      <div class="bg-white/10 backdrop-blur-xl p-8 rounded-[30px] text-center">
+        <h2 class="text-5xl font-black gradient mb-3">4.7★</h2>
+        <p class="text-gray-300">Google Rating</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-xl p-8 rounded-[30px] text-center">
+        <h2 class="text-5xl font-black gradient mb-3">50K+</h2>
+        <p class="text-gray-300">Happy Foodies</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-xl p-8 rounded-[30px] text-center">
+        <h2 class="text-5xl font-black gradient mb-3">100+</h2>
+        <p class="text-gray-300">Menu Items</p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-xl p-8 rounded-[30px] text-center">
+        <h2 class="text-5xl font-black gradient mb-3">#1</h2>
+        <p class="text-gray-300">Gen Z Vibes</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-32 px-6">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+
+      <div class="relative">
+        <img
+          src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1600&auto=format&fit=crop"
+          class="rounded-[40px] h-[650px] w-full object-cover"
+        />
+
+        <div class="absolute -bottom-10 -right-5 bg-gradient-to-r from-pink-500 to-orange-400 p-8 rounded-[30px] max-w-xs">
+          <h3 class="text-4xl font-black mb-3">
+            Aesthetic AF ✨
+          </h3>
+
+          <p>
+            Perfect place for reels, birthdays,
+            dates and midnight cravings.
+          </p>
+        </div>
+      </div>
+
+      <div>
+
+        <p class="uppercase tracking-[8px] text-pink-400 mb-5 font-bold">
+          About Khao Gully
+        </p>
+
+        <h2 class="text-5xl md:text-7xl font-black leading-tight mb-8">
+          Where Food Meets
+          <span class="block gradient">
+            Viral Vibes.
+          </span>
+        </h2>
+
+        <p class="text-xl text-gray-400 leading-relaxed mb-8">
+          More than just a restaurant —
+          Khao Gully is a complete experience
+          filled with aesthetic interiors,
+          spicy food and unforgettable moments.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="py-32 px-6 bg-zinc-950">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-20">
+
+        <p class="uppercase tracking-[8px] text-orange-400 mb-5 font-bold">
+          Trending Dishes
+        </p>
+
+        <h2 class="text-6xl font-black">
+          Food That Hits
+          <span class="block gradient">
+            Different 😮‍💨
+          </span>
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- CARD -->
+        <div class="bg-black rounded-[35px] overflow-hidden card transition duration-300">
+
+          <div class="overflow-hidden img-hover">
+            <img
+              src="https://images.unsplash.com/photo-1626804475297-41608ea09aeb?q=80&w=1400&auto=format&fit=crop"
+              class="h-80 w-full object-cover transition duration-700"
+            />
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-black mb-4">
+              Loaded Cheese Momos
+            </h3>
+
+            <div class="flex justify-between items-center">
+
+              <p class="text-3xl font-black text-pink-400">
+                ₹199
+              </p>
+
+              <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-3 rounded-full font-bold">
+                Order
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-black rounded-[35px] overflow-hidden card transition duration-300">
+
+          <div class="overflow-hidden img-hover">
+            <img
+              src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?q=80&w=1400&auto=format&fit=crop"
+              class="h-80 w-full object-cover transition duration-700"
+            />
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-black mb-4">
+              Korean Noodles
+            </h3>
+
+            <div class="flex justify-between items-center">
+
+              <p class="text-3xl font-black text-pink-400">
+                ₹249
+              </p>
+
+              <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-3 rounded-full font-bold">
+                Order
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-black rounded-[35px] overflow-hidden card transition duration-300">
+
+          <div class="overflow-hidden img-hover">
+            <img
+              src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=1400&auto=format&fit=crop"
+              class="h-80 w-full object-cover transition duration-700"
+            />
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-black mb-4">
+              White Sauce Pasta
+            </h3>
+
+            <div class="flex justify-between items-center">
+
+              <p class="text-3xl font-black text-pink-400">
+                ₹289
+              </p>
+
+              <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-3 rounded-full font-bold">
+                Order
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="bg-black rounded-[35px] overflow-hidden card transition duration-300">
+
+          <div class="overflow-hidden img-hover">
+            <img
+              src="https://images.unsplash.com/photo-1544145945-f90425340c7e?q=80&w=1400&auto=format&fit=crop"
+              class="h-80 w-full object-cover transition duration-700"
+            />
+          </div>
+
+          <div class="p-7">
+
+            <h3 class="text-2xl font-black mb-4">
+              Smoky Mocktails
+            </h3>
+
+            <div class="flex justify-between items-center">
+
+              <p class="text-3xl font-black text-pink-400">
+                ₹149
+              </p>
+
+              <button class="bg-gradient-to-r from-pink-500 to-orange-400 px-5 py-3 rounded-full font-bold">
+                Order
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-32 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-20">
+
+        <p class="uppercase tracking-[8px] text-pink-400 mb-5 font-bold">
+          Ambience Check
+        </p>
+
+        <h2 class="text-6xl font-black">
+          Your Camera Will
+          <span class="block text-yellow-300">
+            Love This Place 📸
+          </span>
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <img
+          src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop"
+          class="rounded-[40px] h-[450px] object-cover w-full hover:scale-105 transition duration-500"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1600&auto=format&fit=crop"
+          class="rounded-[40px] h-[450px] object-cover w-full hover:scale-105 transition duration-500"
+        />
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-32 px-6">
+
+    <div class="max-w-6xl mx-auto bg-zinc-900 rounded-[50px] p-12 text-center">
+
+      <p class="uppercase tracking-[8px] text-orange-400 mb-5 font-bold">
+        Visit Today
+      </p>
+
+      <h2 class="text-6xl font-black mb-10">
+        Ultimate Food Date 💘
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+
+        <div class="bg-black p-8 rounded-[35px]">
+          <div class="text-5xl mb-5">📍</div>
+          <h3 class="text-2xl font-black mb-3">
+            Location
+          </h3>
+          <p class="text-gray-400">
+            Christian Basti,
+            GS Road, Guwahati
+          </p>
+        </div>
+
+        <div class="bg-black p-8 rounded-[35px]">
+          <div class="text-5xl mb-5">⏰</div>
+          <h3 class="text-2xl font-black mb-3">
+            Timings
+          </h3>
+          <p class="text-gray-400">
+            11 AM — 11:30 PM
+          </p>
+        </div>
+
+        <div class="bg-black p-8 rounded-[35px]">
+          <div class="text-5xl mb-5">📞</div>
+          <h3 class="text-2xl font-black mb-3">
+            Reservations
+          </h3>
+          <p class="text-gray-400">
+            +91 XXXXX XXXXX
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 py-10 text-center text-gray-500 bg-black">
+    © 2026 Khao Gully — Designed To Go Viral ✨
+  </footer>
+
+</body>
+</html>
